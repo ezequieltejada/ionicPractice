@@ -1,0 +1,14 @@
+<ion-view view-title="Botonera">
+    <ion-content>
+    	<div class="row responsive-sm">
+    		<div class="col col-33" ng-repeat="personaje in personajes">
+    			<button 
+	    		class="boton" 
+	    		ng-style='imagen={"background-image":"url({{personaje.imageUrl}})"}'
+	    		on-hold="play(personaje.mp3)" 
+	    		on-release="stop()">
+	      		</button>
+    		</div>
+    	</div>
+    </ion-content>
+</ion-view>
